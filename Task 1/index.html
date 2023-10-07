@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Landing Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(bg3.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            color: indianred;
+            border-bottom: 2px solid indianred;
+            transition: 0.2s linear;
+        }
+
+        .logo {
+            color: white;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+        }
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-txt h1 {
+            font-size: 3.5em;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background-color: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">AK's Coffee</div>
+            <div class="Menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/">SERVICES</a></li>
+                    <li><a href="/">CONTACT </a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <br>
+            <br>
+            <br>
+            <h1>A Hot Cup of Happiness.</h1>
+            <br>
+            <br>
+            <br>
+            <a href="#">Book Your ones</a>
+        </section>
+</body>
+
+</html>
