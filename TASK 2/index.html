@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #050517;
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(26, 31, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main hr{
+            border: 0;
+            background: lavender;
+            height: 1.2px;
+            margin: 30px 84px;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.7rem;
+            margin: 80px 0;
+        }
+
+        .leftSection .buttons{
+            padding: 23px;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            color: white;
+            background-color: rgb(27, 48, 105);
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 15px 0;
+            border-radius: 50%;
+        }
+
+        .purple {
+            color: rgb(170, 91, 244);
+        }
+
+        #element{
+            color: rgb(170, 91, 244);
+        }
+
+
+        footer{
+            background-color: #16161f;
+        }
+
+        .footer{
+            
+            display:flex;
+            /* padding: 100px 100px; */
+            justify-content: space-evenly;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: grey;
+            padding: 12px 50px;
+        }
+
+        #mask{
+            filter: drop-shadow(0 0 4.5rem rgb(41, 235, 212));
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aniket's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple" id="glow">Aniket</span>
+                <div>I am a Skilled</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Hire Me</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="pro.jpeg" id="mask" alt="Avatar">
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-rights">
+            www.aniketsportfolio.com | All Rights Reserved
+        </div>
+
+        
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Competative programmer','Front-End Developer','Back-End Developer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

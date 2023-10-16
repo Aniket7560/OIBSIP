@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #050517;
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(26, 31, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main hr{
+            border: 0;
+            background: lavender;
+            height: 1.2px;
+            margin: 30px 84px;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+            font-size: 1.02rem;
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+
+        input[type=email], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        .form{
+            padding:100px 130px;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+/* Style the container */
+    .container {
+        border-radius: 5px;
+        background-color: #6beeff82;
+        padding: 20px  30px;
+        width: 170vh;
+    }
+
+/* Floating column for labels: 25% width */
+    .col-25 {
+        float: left;
+        color: black;
+        font-style: oblique;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+/* Floating column for inputs: 75% width */
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+/* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Aniket's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="form">
+        <div class="container">
+            <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                <label for="fname">Name</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="fname" name="name" placeholder="Your name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                <label for="lname">Email</label>
+                </div>
+                <div class="col-75">
+                <input type="email" id="lname" name="email" placeholder="Your email">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                <label for="subject">Message</label>
+                </div>
+                <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+</html>
